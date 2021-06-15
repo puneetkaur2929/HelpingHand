@@ -105,7 +105,65 @@
     </div>
   </nav>
  
+  <!-- image slider  -->
+  <section id="additional">
 
+    <div class="slider-box">
+      <div id="slider">
+        
+          <img src=".//images/5.jpg" alt="">
+          <img src=".//images/4.jpg" alt="">
+          <img src=".//images/6.jpg" alt="">
+          <img src=".//images/7314.jpg" alt="">
+        
+      </div>
+      <div class="indicators">
+          <span id="btn-1"></span>
+          <span id="btn-2"></span>
+          <span id="btn-3"></span>
+          <span id="btn-4"></span>
+      </div>
+    </div>
+    <script>
+    let slide=document.getElementById('slider');
+    let btn1=document.getElementById('btn-1');
+    let btn2=document.getElementById('btn-2');
+    let btn3=document.getElementById('btn-3');
+    let btn4=document.getElementById('btn-4');
+    btn1.style.backgroundColor="white";
+    btn1.onclick=function(){
+     
+       slide.style.transform="translateX(0%)";
+       btn4.style.backgroundColor="transparent";
+       btn2.style.backgroundColor="transparent";
+       btn1.style.backgroundColor="white";
+       
+    }
+    btn2.onclick=function(){
+       slide.style.transform="translateX(-100%)";
+       btn1.style.backgroundColor="transparent";
+       btn3.style.backgroundColor="transparent";
+       btn2.style.backgroundColor="white";
+
+    }
+    btn3.onclick=function(){
+       slide.style.transform="translateX(-200%)";
+       btn2.style.backgroundColor="transparent";
+       btn4.style.backgroundColor="transparent";
+       btn3.style.backgroundColor="white";
+
+    }
+    btn4.onclick=function(){
+       slide.style.transform="translateX(-300%)";
+       btn3.style.backgroundColor="transparent";
+       btn4.style.backgroundColor="white";
+
+    }
+    </script>
+  </section>
+  
+<!-- coloured section -->
+ 
   <section class="coloured-section" id="title">
     <div class="container-fluid">
       <!-- Title -->

@@ -52,6 +52,58 @@ a.nav-link:hover{
   border-radius: 2rem;
 }
 
+/* image slider */
+
+
+
+.slider-box{
+  position: relative;
+  width:90%;
+  height: 80%;
+  margin:0 auto;
+  
+  overflow: hidden;
+  margin-top: 10rem;
+  
+ box-shadow: 10px 10px 13px #4682B4, -10px -10px 12px #ff6e7f;
+  
+}
+
+#slider{
+  width:100%;
+  display:inline-flex;
+  transition:0.7s ;
+ 
+}
+
+#slider img{
+  width:100%;
+  height: 100%;
+
+}
+.indicators{
+  position: relative;
+  left:100%;
+  margin-top: -10%;
+ 
+  transform: translateX(-50%);
+}
+
+.indicators span{
+  display: inline-block;
+  width:1.5%;
+  height:.7rem;
+  border:3px solid rgb(252, 252, 252);
+  border-radius: 50%;
+  margin-right: 5px;
+ 
+  
+  cursor: pointer;
+  /* background-color:black; */
+  
+}
+
+
 /* title section */
 #title {
   /*background-color: gray;*/
